@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "name": "yukai's knowledge map",
+    "author": "debiaoyu@gmail.com",
+    "version": "0.1"
+  },
+  "format": "node_tree",
+  "data": {
+    "id": "root",
+    "topic": "知识图谱",
+    "children": [
+      {
+        "id": "sync",
+        "topic": "并发",
+        "direction": "left",
+        "expanded": false,
+        "children": [
+          { 
+              "id": "juc", 
+              "topic": "J.U.C",
+              "expanded": true,
+              "children": [
+                {
+                    "id": "juc-container",
+                    "topic": "同步容器"
+                },
+                {
+                    "id": "juc-condition",
+                    "topic": "条件变量"
+                },
+                {
+                    "id": "juc-queue",
+                    "topic": "阻塞队列"
+                },
+                {
+                    "id": "juc-pool",
+                    "topic": "线程池"
+                },
+                {
+                    "id": "juc-sync",
+                    "topic": "同步器"
+                },
+                {
+                    "id": "juc-lock",
+                    "topic": "锁"
+                },
+                {
+                    "id": "juc-cas",
+                    "topic": "原子更新"
+                }
+              ] 
+          },
+          { "id": "memorymode", "topic": "内存模型" }
+        ]
+      },
+      {
+        "id": "database",
+        "topic": "数据库",
+        "direction": "right",
+        "expanded": true,
+        "children": [
+          { "id": "session", "topic": "事务" }
+        ]
+      },
+      {
+        "id": "jvm",
+        "topic": "JVM",
+        "direction": "right",
+        "expanded": true,
+        "children": [
+          { "id": "memorystru", "topic": "内存结构" },
+          { "id": "classload", "topic": "类加载" }
+        ]
+      },
+      {
+        "id": "network",
+        "topic": "网络",
+        "direction": "left",
+        "expanded": true,
+        "children": [
+          { "id": "tcp", "topic": "TCP" },
+          { "id": "http", "topic": "HTTP" }
+        ]
+      },
+      {
+        "id": "codemode",
+        "topic": "编程模型",
+        "direction": "left",
+        "expanded": false,
+        "children": [
+          { "id": "codemode-sync", "topic": "异步" },
+          { "id": "xiecheng", "topic": "协程" },
+          { "id": "func", "topic": "函数式编程" },
+          { "id": "events", "topic": "事件驱动" },
+          { "id": "xiangying", "topic": "响应式编程" }
+        ]
+      },
+      {
+        "id": "codeformat",
+        "topic": "编程范式",
+        "direction": "right",
+        "expanded": false,
+        "children": [
+          { "id": "design", "topic": "设计模式" },
+          { "id": "review", "topic": "重构" },
+          { "id": "zone", "topic": "领域驱动" },
+          { "id": "oo", "topic": "抽象" }
+        ]
+      },
+      {
+        "id": "struct",
+        "topic": "架构",
+        "direction": "right",
+        "expanded": false,
+        "children": [
+          { "id": "weifuwu", "topic": "微服务" },
+          { "id": "rest", "topic": "Rest" },
+          { "id": "fenbu", "topic": "分布式" }
+        ]
+      },
+      {
+        "id": "tools",
+        "topic": "工具",
+        "direction": "left",
+        "expanded": false,
+        "children": [
+          { "id": "git", "topic": "Git" },
+          { "id": "docker", "topic": "Docker" },
+          { "id": "linux", "topic": "Linux" },
+          { "id": "maven", "topic": "Maven" },
+          { "id": "webpack", "topic": "Webpack" }
+        ]
+      },
+      {
+        "id": "front",
+        "topic": "前端",
+        "direction": "left",
+        "expanded": true,
+        "children": [
+          { "id": "ui", "topic": "UI设计" },
+          { "id": "MVVM", "topic": "MVVM" }
+        ]
+      }
+    ]
+  }
+}

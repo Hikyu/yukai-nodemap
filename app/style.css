@@ -1,0 +1,113 @@
+/* 设置按钮样式 */
+#in {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 100;
+}
+
+.zoom {
+  height: 30px;
+  text-align: center;
+  width: 30px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid #007bff;
+  color: #007bff;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+button:hover {
+  color: white;
+  background: #007bff;
+}
+
+#out {
+  position: absolute;
+  right: 20px;
+  top: 60px;
+  z-index: 100;
+}
+
+/* 设置思维导图样式 */
+#mind_container {
+  position: relative;
+  width: 90%;
+  background: #fff;
+  z-index: 1;
+  flex: 4;
+}
+
+/*设置背景样式*/
+html, body {
+  background: #007bff;
+  height: 100%;
+  overflow: hidden;
+}
+
+#content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 90%;
+    z-index: 1;
+}
+
+#head {
+    flex: 1;
+    z-index: 1;
+}
+
+h1 {
+  margin: 0;
+  padding-top: 20px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 3em;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-family: Roboto;
+  font-weight: normal;
+}
+
+h2 a {
+  color: white;
+  font-size: 15px;
+  padding: 0 30px;
+}
+
+/*设置滚动条样式*/
+*::-webkit-scrollbar {
+  width: 0px;
+  height: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #eee;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #888;
+}
+*::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(100, 100, 100, 0.4);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  height: 8px;
+  width: 8px;
+  background-color: #9f9f9f;
+}
+
+
