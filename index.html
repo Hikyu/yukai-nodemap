@@ -4,13 +4,17 @@
 <head>
   <meta charset="utf-8">
   <title>yukai's mind map</title>
-  <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet" type="text/css">
+
   <style>
     .loading {
       position: fixed;
       width: 100%;
       height: 100%;
       background: #007bff;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
       z-index: 999;
     }
 
@@ -23,11 +27,12 @@
       bottom: 0;
     }
   </style>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet" type="text/css">
 </head>
 
 <body>
   <div class="loading">
-      <img class="center" src="loading-bubbles.svg" width="64" height="64" />
+    <img class="center" src="loading-bubbles.svg" width="64" height="64" />
   </div>
   <div id="content">
     <div id="head">
@@ -39,6 +44,15 @@
     <div id="mind_container">
       <button class="zoom" id="in">&#43;</button>
       <button class="zoom" id="out">&minus;</button>
+    </div>
+  </div>
+  <div id="modal" class="modal-window">
+    <div>
+      <a href="#" title="Close" class="modal-close">Close</a>
+      <h1>Hello World</h1>
+      <div>A CSS-only modal based on the :target pseudo-class. Hope you find it helpful.
+        <a href="https://yukai.space" target="_blank">Say hello on Twitter.</a>
+        </div>
     </div>
   </div>
   <script src="bundle.js"></script>
